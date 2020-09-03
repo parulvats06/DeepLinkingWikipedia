@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="65" id="KGk-i7-Jjw" customClass="LocationTableViewCell" customModule="WikipediaTest" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="370" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Test Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rsn-E2-7Kv">
+                        <rect key="frame" x="16" y="12" width="100.5" height="20"/>
+                        <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Ka-dk-oQu">
+                        <rect key="frame" x="16" y="36" width="338" height="17.5"/>
+                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDD-6s-lQ5">
+                        <rect key="frame" x="325.5" y="19" width="20.5" height="22"/>
+                        <state key="normal" image="paperplane" catalog="system"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PDD-6s-lQ5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Cxx-EJ-1oo"/>
+                    <constraint firstItem="rsn-E2-7Kv" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="PRF-bR-qn9"/>
+                    <constraint firstItem="6Ka-dk-oQu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="QYM-Sd-l0n"/>
+                    <constraint firstItem="6Ka-dk-oQu" firstAttribute="top" secondItem="rsn-E2-7Kv" secondAttribute="bottom" constant="4" id="VKq-qA-fdm"/>
+                    <constraint firstItem="rsn-E2-7Kv" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XZj-dz-Wum"/>
+                    <constraint firstAttribute="trailing" secondItem="6Ka-dk-oQu" secondAttribute="trailing" constant="16" id="u7d-eu-mvF"/>
+                    <constraint firstAttribute="trailing" secondItem="PDD-6s-lQ5" secondAttribute="trailing" constant="24" id="xbb-0Z-i4a"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="locationCoordinateLabel" destination="6Ka-dk-oQu" id="SiX-nA-yaA"/>
+                <outlet property="locationTitleLabel" destination="rsn-E2-7Kv" id="5ba-vb-QON"/>
+            </connections>
+            <point key="canvasLocation" x="31.884057971014496" y="114.50892857142857"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="paperplane" catalog="system" width="128" height="121"/>
+    </resources>
+</document>

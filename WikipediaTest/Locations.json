@@ -1,0 +1,29 @@
+{
+  "data": [
+    {
+      "title": "Utrecht",
+      "latitude": "52.0809",
+      "longitude": "5.1276"
+    },
+    {
+      "title": "Stationsplein, Amsterdam",
+      "latitude": "52.3785",
+      "longitude": "4.8990"
+    },
+    {
+      "title": "The Hague",
+      "latitude": "52.0749",
+      "longitude": "4.2696"
+    },
+    {
+      "title": "Amstelveen",
+      "latitude": "52.2862",
+      "longitude": "4.8526"
+    },
+    {
+      "title": "Central Park, Manhattan",
+      "latitude": "40.7827",
+      "longitude": "-73.9653"
+    }
+  ]
+}

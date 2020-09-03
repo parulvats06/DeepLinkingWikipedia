@@ -2,7 +2,7 @@
 //  WikipediaTestTests.swift
 //  WikipediaTestTests
 //
-//  Created by parul vats on 10/07/2020.
+//  Created by Parul Vats on 10/07/2020.
 //  Copyright © 2020 Tekhsters. All rights reserved.
 //
 
@@ -18,17 +18,32 @@ class WikipediaTestTests: XCTestCase {
     override func tearDown() {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
-
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
+    
+    func testModelParsing() {
+        let viewModel: LocationViewModel = LocationViewModel()
+        viewModel.fetchStaticLocations()
+        XCTAssert(viewModel.locations.count == 5, "Location count is incorrect")
     }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+    
+    func testLocationData() {
+        let viewModel: LocationViewModel = LocationViewModel()
+        viewModel.fetchStaticLocations()
+        let location = viewModel.locations[1]
+        XCTAssert(location.title == "Stationsplein, Amsterdam", "Title is incorrect")
+        XCTAssert(location.latitude == "52.3785", "latitude is incorrect")
+        XCTAssert(location.longitude == "4.8990", "longitude is incorrect")
+    }
+    
+    func testWhenItIsAValidLocation() {
+        let isValid = Utilities.isValidLocation(latitude:-28.5784, longitude: 121.20)
+        
+        XCTAssert(isValid == true, "Location is valid but gives invalid")
+    }
+    
+    func testWhenItIsAInvalidLocation() {
+        let isValid = Utilities.isValidLocation(latitude:-128.5784, longitude: 121.20)
+        
+        XCTAssert(isValid == false, "Location is invalid but gives valid")
     }
 
 }

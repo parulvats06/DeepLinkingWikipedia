@@ -2,7 +2,7 @@
 //  WikipediaTestUITests.swift
 //  WikipediaTestUITests
 //
-//  Created by parul vats on 10/07/2020.
+//  Created by Parul Vats on 10/07/2020.
 //  Copyright © 2020 Tekhsters. All rights reserved.
 //
 
@@ -27,7 +27,7 @@ class WikipediaTestUITests: XCTestCase {
         // UI tests must launch the application that they test.
         let app = XCUIApplication()
         app.launch()
-
+        
         // Use recording to get started writing UI tests.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }

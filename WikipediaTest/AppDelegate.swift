@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  WikipediaTest
 //
-//  Created by parul vats on 10/07/2020.
+//  Created by Parul Vats on 10/07/2020.
 //  Copyright © 2020 Tekhsters. All rights reserved.
 //
 
